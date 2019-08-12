@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5 {
 @media only screen and (max-width: 500px) {
     
     .container {
+        width: 500px;
         margin: auto;
         flex-direction: column;
         flex-wrap: wrap;
@@ -117,13 +118,13 @@ h1, h2, h3, h4, h5 {
         padding: 15px;
     }
 
-
     .bottom-content{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
     }
+    
     .services {
         padding: 15px;
     }
@@ -134,6 +135,7 @@ h1, h2, h3, h4, h5 {
         padding: 15px;
     }
 
+    
     .contact-content{
         display: flex;
         flex-direction: column;
@@ -152,26 +154,32 @@ h1, h2, h3, h4, h5 {
     .container {
         width: 800px;
         margin: auto;
-        flex
+        
     }
 
     header {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
     }
 
     .logo { 
         display: flex;
         order: 2;
-        margin: 40px;
+        margin: 20px;
     }
+
+    /*Having issues aligning this horizontally, not vertically */
+    
     nav {
         display: flex;
-        order: 3;
+        order: 3;         
+        flex-direction: row;
+        align-items: center;  
+        justify-content: center;    
     }
-    
+
     .intro-container {
         display: flex;
         justify-content: center;
