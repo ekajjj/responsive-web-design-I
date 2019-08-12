@@ -193,6 +193,52 @@ footer p {
 	text-align: center;
 }
 
+@media only screen and (max-width: 800px) {
+
+    .container {
+        width: 800px;
+        margin: auto;
+        
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo { 
+        display: flex;
+        order: 2;
+        margin: 20px;
+    }
+
+    /*Having issues aligning this horizontally, not vertically */
+    
+    nav {
+        display: flex;
+        order: 3;         
+        flex-direction: row;
+        align-items: center;  
+        justify-content: center;    
+    }
+
+    .intro-container {
+        display: flex;
+        justify-content: center;
+        position: relative;    
+        margin: 20px;
+    }
+
+    /* Why isn't display: none working here? */
+    .introimg {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+}
 
 /* MOBILE MEDIA VIEW */
 /* MOBILE MEDIA VIEW */
@@ -290,49 +336,3 @@ each individual section doesn't seem to work. */
 /* TABLET MEDIA VIEW */
 /* TABLET MEDIA VIEW */
 
-@media only screen and (max-width: 800px) {
-
-    .container {
-        width: 800px;
-        margin: auto;
-        
-    }
-
-    header {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .logo { 
-        display: flex;
-        order: 2;
-        margin: 20px;
-    }
-
-    /*Having issues aligning this horizontally, not vertically */
-    
-    nav {
-        display: flex;
-        order: 3;         
-        flex-direction: row;
-        align-items: center;  
-        justify-content: center;    
-    }
-
-    .intro-container {
-        display: flex;
-        justify-content: center;
-        position: relative;    
-        margin: 20px;
-    }
-
-    /* Why isn't display: none working here? */
-    .introimg {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-}
