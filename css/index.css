@@ -65,141 +65,6 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-/* MOBILE MEDIA VIEW */
-/* MOBILE MEDIA VIEW */
-/* MOBILE MEDIA VIEW */
-/* MOBILE MEDIA VIEW */
-
-@media only screen and (max-width: 500px) {
-    
-    .container {
-        width: 500px;
-        margin: auto;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .logo {
-        display: flex;
-        order: 2;
-
-    }
-    header {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    nav {
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        order: 3;
-    }
-
-    .navlink {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        padding: 15px;
-        border-top: 1px solid black;
-       
-    }
-    .top-content {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    .features {
-        padding: 15px;
-    }
-    .about {
-        padding: 15px;
-    }
-/* Having issues with the width on these - even adding width overrides to 
-each individual section doesn't seem to work. */
-    .bottom-content{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    .bottom-content div {
-        width: 49%;
-    }
-    
-    .services {
-        padding: 15px;
-    }
-    .product {
-        padding: 15px;
-    }
-    .vision {
-        padding: 15px;
-    }
-
-    
-    .contact-content{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-}
-
-/* TABLET MEDIA VIEW */
-/* TABLET MEDIA VIEW */
-/* TABLET MEDIA VIEW */
-/* TABLET MEDIA VIEW */
-
-@media only screen and (max-width: 800px) {
-
-    .container {
-        width: 800px;
-        margin: auto;
-        
-    }
-
-    header {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .logo { 
-        display: flex;
-        order: 2;
-        margin: 20px;
-    }
-
-    /*Having issues aligning this horizontally, not vertically */
-    
-    nav {
-        display: flex;
-        order: 3;         
-        flex-direction: row;
-        align-items: center;  
-        justify-content: center;    
-    }
-
-    .intro-container {
-        display: flex;
-        justify-content: center;
-        position: relative;    
-        margin: 20px;
-    }
-
-    /* Why isn't display: none working here? */
-    .introimg {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-}
-
 /* DESKTOP MEDIA VIEW */
 /* DESKTOP MEDIA VIEW */
 /* DESKTOP MEDIA VIEW */
@@ -326,4 +191,148 @@ header p {
 }
 footer p {
 	text-align: center;
+}
+
+
+/* MOBILE MEDIA VIEW */
+/* MOBILE MEDIA VIEW */
+/* MOBILE MEDIA VIEW */
+/* MOBILE MEDIA VIEW */
+
+@media only screen and (max-width: 500px) {
+    
+    .container {
+        width: 500px;
+        margin: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .logo {
+        display: flex;
+        order: 2;
+
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    nav {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        order: 3;
+    }
+
+    .navlink {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        border-top: 1px solid black;
+       
+    }
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .features {
+        padding: 15px;
+    }
+    .about {
+        padding: 15px;
+    }
+/* Having issues with the width on these - even adding width overrides to 
+each individual section doesn't seem to work. */
+    .bottom-content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .bottom-content .services {
+        width: 49%;
+    }
+
+    .bottom-content .product{
+        width: 49%;
+    }
+
+    .bottom-content .vision {
+        width: 49%;
+    }
+    
+    .services {
+        padding: 15px;
+    }
+    .product {
+        padding: 15px;
+    }
+    .vision {
+        padding: 15px;
+    }
+
+    
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+/* TABLET MEDIA VIEW */
+/* TABLET MEDIA VIEW */
+/* TABLET MEDIA VIEW */
+/* TABLET MEDIA VIEW */
+
+@media only screen and (max-width: 800px) {
+
+    .container {
+        width: 800px;
+        margin: auto;
+        
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo { 
+        display: flex;
+        order: 2;
+        margin: 20px;
+    }
+
+    /*Having issues aligning this horizontally, not vertically */
+    
+    nav {
+        display: flex;
+        order: 3;         
+        flex-direction: row;
+        align-items: center;  
+        justify-content: center;    
+    }
+
+    .intro-container {
+        display: flex;
+        justify-content: center;
+        position: relative;    
+        margin: 20px;
+    }
+
+    /* Why isn't display: none working here? */
+    .introimg {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
 }
