@@ -117,12 +117,16 @@ h1, h2, h3, h4, h5 {
     .about {
         padding: 15px;
     }
-
+/* Having issues with the width on these - even adding width overrides to 
+each individual section doesn't seem to work. */
     .bottom-content{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+    }
+    .bottom-content div {
+        width: 49%;
     }
     
     .services {
